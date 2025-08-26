@@ -1,7 +1,7 @@
 /*BURGER*/
 .menu-toggle {
-	width: 25px;
-	height: 25px;
+	width: 24px;
+	height: 24px;
 	flex-shrink: 0;
 	-webkit-box-pack: center;
 			justify-content: center;
@@ -37,10 +37,10 @@
   }
   
   .menu-toggle  span::before {
-	top: -5px;
+	top: -7px;
   }
   .menu-toggle  span::after {
-	top: 5px;
+	top: 7px;
   }
   
   /* Active state */
