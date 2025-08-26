@@ -1,0 +1,108 @@
+.transform-list{
+	label{
+		display: block;
+		position: relative;
+		
+		input{
+			width: 0.01px;
+			height: 0.01px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			display: none;
+		}
+		ul{
+			padding: 0;
+			margin: 0;
+			list-style-type: none;
+			@media (max-width: 767px) {
+			    display: none;
+			}
+		}
+		input:checked + ul{
+			display: block;
+		}
+	}
+	&__title{
+		position: relative;
+		&:after{
+			content: '';
+			position: absolute;
+			top: 3px;
+			right: 10px;
+			width: 14px;
+			height: 14px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: 14px 14px;
+			color: white;
+			background-image: url("data:image/svg+xml;charset=UTF-8,%3c?xml version='1.0' encoding='utf-8'?%3e%3c!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools --%3e%3csvg width='800px' height='800px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath fill-rule='evenodd' clip-rule='evenodd' d='M4.29289 8.29289C4.68342 7.90237 5.31658 7.90237 5.70711 8.29289L12 14.5858L18.2929 8.29289C18.6834 7.90237 19.3166 7.90237 19.7071 8.29289C20.0976 8.68342 20.0976 9.31658 19.7071 9.70711L12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L4.29289 9.70711C3.90237 9.31658 3.90237 8.68342 4.29289 8.29289Z' fill='%23ffffff'/%3e%3c/svg%3e");
+			display: none;
+			@media (max-width: 767px) {
+			display: block;
+			}
+		}
+	}
+}
+footer.footer{
+	padding-block:60px;
+	background-color: #101828;
+	.footer-top{margin-bottom: 40px;}
+	@media (max-width: 767px) {
+	   padding-top: 32px;
+	}
+}
+.footer-logo{
+	img{
+		width: 180px;
+		height: 40px;
+		object-fit: contain;
+	}
+}
+.footer-nav{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap:150px;
+	@media (max-width: 1199px) {
+	   column-gap:70px;
+	}
+	@media (max-width: 1023px) {
+	 column-gap:40px;
+	}
+	@media (max-width: 767px) {
+	   grid-template-columns: 1fr;
+	   row-gap:40px;
+	 }
+}
+.footer-nav .transform-list__title{
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 160%;
+	color: #fff;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #98a1ae;
+	@media (max-width: 1199px) {
+       font-size: 14px;
+	}
+	@media (max-width: 767px) {
+	font-size: 16px;
+	}
+}
+.footer-nav__item{
+   border-bottom: 1px solid #98a1ae;
+}
+.footer-nav__link{
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.6;
+	color: #98a1ae;
+	padding-top: 7px;
+	padding-bottom: 7px;
+	display: block;
+	white-space: nowrap;
+	@media (max-width: 767px) {
+	   font-size: 14px;
+	}
+}
+

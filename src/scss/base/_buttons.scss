@@ -1,0 +1,20 @@
+.btn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: fit-content;
+	padding-left: 40px;
+	padding-right: 40px;
+	border-radius: 5px;
+    height: 48px;
+	font-family: var(--font-family);
+	font-weight: 700;
+	font-size: 16px;
+	text-transform: uppercase;
+	text-align: center;
+	color: #fff;
+	background-color: var(--blue);
+	border:2px solid var(--blue);
+	transition: .3s;
+	&:hover{opacity: .8;}
+}
