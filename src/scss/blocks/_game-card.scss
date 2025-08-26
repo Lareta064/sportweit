@@ -1,3 +1,6 @@
+.game-cards-wrapper{
+	&>*+*{margin-top: 30px;}
+}
 .game-card{
 	display: flex;
 	align-items: center;
@@ -41,23 +44,37 @@
 }
 .game-card__img{
 	width: 126px;
-	height: 73px;
+	aspect-ratio: 126/73;
 	flex-shrink: 0;
+	display: flex;
+	border-radius: 4px;
+	overflow: hidden;
+	justify-content: center;align-items: center;
 	img{
-		width: 100%;
-		height: 100%;
-		object-fit: cover;
-		border-radius: 4px;
+		// width: 100%;
+		// height: 100%;
+		// object-fit: cover;
+		
+	}
+	@media (max-width: 1199px) {
+	   width: 95px;
+	   aspect-ratio: 95/92;
 	}
 }
 .game-card__group{
 	display: flex;
 	align-items: center;
 	column-gap:88px;
+	@media (max-width: 1439px) {
+	 column-gap:50px;
+	}
 }
 .game-card__text{
 	display: flex;
 	column-gap: 88px;
+	@media (max-width: 1439px) {
+	 column-gap:50px;
+	}
 	
 }
 .game-card__rating{

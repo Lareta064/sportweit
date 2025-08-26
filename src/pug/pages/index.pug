@@ -5,73 +5,74 @@ block content
 		include ../sections/_header.pug
 		main.main-page
 			.container
-				//SINGLE CARD
-				.game-card
-					.game-card-label 
-						span Best rating
-					.game-card__num
-						span 1
-					.game-card-content
-						.game-card__group
-							.game-card__img
-								img(src='./img/game.webp', srcset='./img/game@2x.webp 2x' width='126' height='73'  alt='img' type="image/webp")
-							.game-card__text
-								.game-card__rating
-									span 5.0
-									img(src='./img/rating-100.svg' width='78' height='14'  alt='img')
-								ul.game-card__list
-									li Welcome bonus of 100 CHF/€
-									li User-friendly platform
-									li Over 30 sports
+				.game-cards-wrapper
+					//SINGLE CARD
+					.game-card
+						.game-card-label 
+							span Best rating
+						.game-card__num
+							span 1
+						.game-card-content
+							.game-card__group
+								.game-card__img
+									img(src='./img/game.webp', srcset='./img/game@2x.webp 2x' width='126' height='124'  alt='img' type="image/webp")
+								.game-card__text
+									.game-card__rating
+										span 5.0
+										img(src='./img/rating-100.svg' width='78' height='14'  alt='img')
+									ul.game-card__list
+										li Welcome bonus of 100 CHF/€
+										li User-friendly platform
+										li Over 30 sports
+						
+						
+						.game-card-button
+							a.btn(href="#!") play
 					
-					
-					.game-card-button
-						a.btn(href="#!") play
-				
-				//SINGLE CARD
-				.game-card
-					.game-card-label
-						span Selection of players
-					.game-card__num
-						span 1
-					.game-card-content
-						.game-card__group
-							.game-card__img
-								img(src='./img/game.webp', srcset='./img/game@2x.webp 2x' width='126' height='73'  alt='img' type="image/webp")
-							.game-card__text
-								.game-card__rating
-									span 4.5
-									img(src='./img/rating-90.svg' width='78' height='14'  alt='img')
-								ul.game-card__list
-									li Welcome bonus of 100 CHF/€
-									li User-friendly platform
-									li Over 30 sports
-					
-					
-					.game-card-button
-						a.btn(href="#!") play
+					//SINGLE CARD
+					.game-card
+						.game-card-label
+							span Selection of players
+						.game-card__num
+							span 1
+						.game-card-content
+							.game-card__group
+								.game-card__img
+									img(src='./img/game.webp', srcset='./img/game@2x.webp 2x' width='126' height='73'  alt='img' type="image/webp")
+								.game-card__text
+									.game-card__rating
+										span 4.5
+										img(src='./img/rating-90.svg' width='78' height='14'  alt='img')
+									ul.game-card__list
+										li Welcome bonus of 100 CHF/€
+										li User-friendly platform
+										li Over 30 sports
+						
+						
+						.game-card-button
+							a.btn(href="#!") play
 
-				//SINGLE CARD
-				.game-card
-					
-					.game-card__num
-						span 1
-					.game-card-content
-						.game-card__group
-							.game-card__img
-								img(src='./img/game.webp', srcset='./img/game@2x.webp 2x' width='126' height='73'  alt='img' type="image/webp")
-							.game-card__text
-								.game-card__rating
-									span 4.0
-									img(src='./img/rating-80.svg' width='78' height='14'  alt='img')
-								ul.game-card__list
-									li Welcome bonus of 100 CHF/€
-									li User-friendly platform
-									li Over 30 sports
-					
-					
-					.game-card-button
-						a.btn(href="#!") play
+					//SINGLE CARD
+					.game-card
+						
+						.game-card__num
+							span 1
+						.game-card-content
+							.game-card__group
+								.game-card__img
+									img(src='./img/game.webp', srcset='./img/game@2x.webp 2x' width='126' height='73'  alt='img' type="image/webp")
+								.game-card__text
+									.game-card__rating
+										span 4.0
+										img(src='./img/rating-80.svg' width='78' height='14'  alt='img')
+									ul.game-card__list
+										li Welcome bonus of 100 CHF/€
+										li User-friendly platform
+										li Over 30 sports
+						
+						
+						.game-card-button
+							a.btn(href="#!") play
 					
 		include ../sections/_footer.pug
 			

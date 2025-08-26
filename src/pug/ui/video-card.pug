@@ -1,0 +1,52 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		//- link(rel="stylesheet"  href="../libs/bootstrap/bootstrap.min.css")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard(style="background:#f8f8f8;")
+		button#close-ui Toggle
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2.db-h2 Карточки статистика
+				.container-dashboard__content
+					.container
+						.grid-12.xxl-col-2
+							.video-box.flex-column
+								.video-box__top.d-flex-cy
+									.h-24 Посмотрите полный обзор<br>1С:CRM за&nbsp;4&nbsp;минуты
+
+									.round-badge Обзор
+								
+								.video-box__bottom
+									.h-20 Оксана Самойлова
+									.fs-16 Директор по&nbsp;развитию в&nbsp;1С:CRM
+
+								.video-box__img
+									img(src='../img/photo.webp', srcset='../img/photo@2x.webp 2x' width='384' height='358' loading='lazy' alt='img')
+									
+								.video-box__iframe
+									iframe(width='100%' height='100%' src='https://rutube.ru/play/embed/a1bba8445f2fd22943af872c616b0eb2/' frameborder='0' allow='clipboard-write; autoplay' webkitallowfullscreen mozallowfullscreen allowfullscreen)
+									
+									// если ссылка вк видео, то важно в конце ссылки после &autoplay=1 приписать js_api=1
+									//- iframe(src='https://vkvideo.ru/video_ext.php?oid=87030562&id=456239632&hd=2&hash=baa895ef0279f94c&autoplay=1&js_api=1' width='100%' height='100%' allow='autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;' frameborder='0' allowfullscreen)
+								button(type="button").btn-play.video-box-btn
+
+
+						
+			script.
+				document.querySelector('#close-ui').addEventListener('click', ()=>{
+					document.body.classList.toggle('active')
+				})

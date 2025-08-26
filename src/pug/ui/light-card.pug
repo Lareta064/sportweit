@@ -1,0 +1,38 @@
+include ../layouts/_mixins-links.pug
+block variables
+
+<!DOCTYPE html>
+html(lang="ru")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, initial-scale=1.0")
+		meta(http-equiv="X-UA-Compatible", content="ie=edge")
+
+		//====убрать синий цвет у ссылок в сафари ========
+		meta(name="format-detection" content="telephone=no")
+		//- link(rel="stylesheet"  href="../libs/bootstrap/bootstrap.min.css")
+		link(rel="stylesheet", href="../css/main.css")
+		title UI-KIT
+
+	body.body-dashboard(style="background:#f8f8f8;")
+		button#close-ui Toggle
+		include ui-navigation.pug
+
+		block content
+			.container-dashboard
+				h2.db-h2 Карточки статистика
+				.container-dashboard__content
+					.container
+						+lightCard('Масштабируемость', 'Неограниченное количество рабочих мест, мощный функционал управления продаж и&nbsp;автоматизации для&nbsp;бизнеса любого размера.')
+						
+						pre.
+							+lightCard('Масштабируемость', 'Неограниченное количество рабочих мест, мощный функционал управления продаж и&nbsp;автоматизации для&nbsp;бизнеса любого размера.')
+
+						br
+						+lightCardIcon-ui('Роботы и&nbsp;триггеры в&nbsp;сделках для&nbsp;автоматизации')
+						pre.
+							+lightCardIcon('Роботы и&nbsp;триггеры в&nbsp;сделках для&nbsp;автоматизации')
+		script.
+			document.querySelector('#close-ui').addEventListener('click', ()=>{
+				document.body.classList.toggle('active')
+			})				

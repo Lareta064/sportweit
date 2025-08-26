@@ -2,21 +2,21 @@
 @use "base/_var" as *;
 @use "base/_base";
 // @use "base/_test";
-// @import "base/_grids";
-// @import "base/_typography";
- @import "base/_icons";
- @import "base/_form";
- @import "base/_buttons";
-@import "blocks/_nav-menu.scss";
-@import "blocks/_gamburger.scss";
-@import "blocks/_game-card.scss";
-@import "sections/_header.scss";
-@import "sections/_footer.scss";
+// @use "base/_grids";
+// @use "base/_typography";
+ @use "base/_icons";
+ @use "base/_form";
+ @use "base/_buttons";
+@use "blocks/_nav-menu.scss";
+@use "blocks/_gamburger.scss";
+@use "blocks/_game-card.scss";
+@use "sections/_header.scss";
+@use "sections/_footer.scss";
 
 
 
-// @import "blocks/_marker-list";
-// @import "blocks/_tabs";
+// @use "blocks/_marker-list";
+// @use "blocks/_tabs";
 
 
 
